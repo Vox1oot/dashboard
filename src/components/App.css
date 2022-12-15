@@ -1,3 +1,10 @@
+@import './Todo/Todo.css';
+
 body {
 	background-color: #282c34;
+	font-family: roboto-regular, sans-serif;
+}
+
+.main-container {
+	padding: 20px;
 }
