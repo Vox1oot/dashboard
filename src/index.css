@@ -8,6 +8,10 @@
 	display: grid;
 }
 
+.p-30 {
+	padding: 30px;
+}
+
 .pt-pb-5 {
 	padding: 5px 0;
 }

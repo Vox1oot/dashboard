@@ -7,7 +7,7 @@ import { ReactComponent as Light } from '../../../img/light.svg';
 const Information = () => {
 	const [state, setState] = useState(getDateAndTime());
 
-	const classesHeader = cn('header-container', {
+	const classesHeader = cn('header-container', 'p-30', {
 		morning: getHour() >= 7 && getHour() <= 18,
 		evening: getHour() > 18 || getHour() < 7,
 	});
