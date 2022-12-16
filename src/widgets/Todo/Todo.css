@@ -1,0 +1,42 @@
+.todo-container {
+	max-width: 400px;
+	max-height: 100vh;
+	background-color: #fff
+}
+
+.header-container {
+	position: relative;
+	width: auto;
+	height: 200px;
+	padding: 30px;
+	font-size: 20px;
+}
+
+.header-information {
+	position: absolute;
+	bottom: 20px;
+}
+
+.today {
+	font-family: roboto-bold;
+	font-size: 35px;
+}
+
+/* dynamic styles */
+.morning {
+	background-image: url('../../img/morning-mountains.jpg');
+	background-size: cover;
+    background-position: center;
+	color: #282c34;
+}
+
+.evening {
+	background-image: url('../../img/evening-mountains.jpg');
+	background-size: cover;
+    background-position: center;
+	color: #fff;
+}
+
+
+
+
