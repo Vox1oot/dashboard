@@ -1,4 +1,4 @@
-.todo-container {
+.todo {
 	max-width: 400px;
 	max-height: 100vh;
 	border: 0;
@@ -8,14 +8,14 @@
 
 /* HEADER */
 
-.header-container {
+.todo__header {
 	position: relative;
 	width: auto;
 	height: 200px;
 	font-size: 20px;
 }
 
-.header-container::before{
+.todo__header::before{
 	position: absolute;
 	content: ' ';
 	width: 100%;
@@ -28,18 +28,19 @@
 	opacity: 0.3;
 }
 
-.header-information {
+
+.header-todo__light {
+	text-align: right;
+}
+
+.header-todo__information {
 	position: absolute;
 	bottom: 20px;
 }
 
-.today {
+.information-todo__text {
 	font-family: roboto-bold;
 	font-size: 35px;
-}
-
-.header__light {
-	text-align: right;
 }
 
 /* dynamic styles */
@@ -69,10 +70,19 @@
 
 /* TASKS */
 
-.tasks-container {
+.tasks {
 	background-color: #fff;
 	min-width: 100%;
+	min-height: 67vh;
 }
+
+.tasks__item {
+	list-style-type: none;
+}
+
+
+/* TASK */
+
 
 
 

@@ -1,11 +1,11 @@
 import React from 'react';
-import Information from './components/Information.jsx';
+import Header from './components/Header.jsx';
 import Tasks from './components/Tasks.jsx';
 
 const Todo = () => (
-	<div className="todo-container">
-		<div className="todo">
-			<Information />
+	<div className="todo">
+		<div className="todo-container">
+			<Header />
 			<Tasks />
 		</div>
 	</div>

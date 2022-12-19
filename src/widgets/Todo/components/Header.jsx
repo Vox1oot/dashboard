@@ -4,10 +4,10 @@ import getDateAndTime, { getHour } from '../../../utils/getDateAndTime.js';
 
 import { ReactComponent as Light } from '../../../img/light.svg';
 
-const Information = () => {
+const Header = () => {
 	const [state, setState] = useState(getDateAndTime());
 
-	const classesHeader = cn('header-container', 'p-30', {
+	const classesHeader = cn('todo__header', 'header-todo', 'p-30', {
 		morning: getHour() >= 7 && getHour() <= 18,
 		evening: getHour() > 18 || getHour() < 7,
 	});
@@ -22,13 +22,13 @@ const Information = () => {
 
 	return (
 		<div className={classesHeader}>
-			<div className="header__light">
+			<div className="header-todo__light">
 				<Light className="light shining" />
 			</div>
-			<div className="header-information">
-				<div className="today pt-pb-5">Сегодня</div>
-				<div className="today__date pt-pb-5">{state.currentDate}</div>
-				<div className="today__time pt-pb-5">
+			<div className="header-todo__information information-todo">
+				<div className="information-todo__text pt-pb-5">Сегодня</div>
+				<div className="information-todo__date pt-pb-5">{state.currentDate}</div>
+				<div className="information-todo__time pt-pb-5">
 					Текущее время:
 					<span>{state.currentTime}</span>
 				</div>
@@ -37,4 +37,4 @@ const Information = () => {
 	);
 };
 
-export default Information;
+export default Header;
