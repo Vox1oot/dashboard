@@ -7,13 +7,13 @@ import Task from './Task.jsx';
 const Tasks = () => {
 	const tasks = useSelector(selectors.selectAll);
 
-	console.log(tasks);
+	const currentTasks = tasks.map((task) => <Task key={task.id} propertys={task} />);
 
 	return (
 		<div className="tasks">
 			<div className="tasks__container p-30">
 				<ul className="tasks__list">
-					<Task />
+					{currentTasks}
 				</ul>
 			</div>
 		</div>

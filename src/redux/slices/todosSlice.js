@@ -3,7 +3,7 @@ import { createEntityAdapter, createSlice } from '@reduxjs/toolkit';
 const todosAdapter = createEntityAdapter();
 // { ids: [], entities: {} }
 const initialState = todosAdapter.getInitialState({
-	ids: [1], entities: { 1: { id: 1, text: 'Почистить зубы' } },
+	ids: [1], entities: { 1: { id: 1, text: 'Почистить зубы', active: true } },
 });
 
 const todosSlice = createSlice({
