@@ -5,6 +5,11 @@ body {
 	font-family: roboto-regular, sans-serif;
 }
 
+.App {
+	height: 100vh;
+}
+
 .main-container {
-	padding: 20px;
+	height: 96vh;
+	padding: 2vh;
 }
