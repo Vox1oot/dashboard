@@ -74,11 +74,13 @@
 	background-color: #fff;
 }
 
-.tasks__item {
-	list-style-type: none;
-}
 
 /* TASK */
+
+.tasks__item {
+	list-style-type: none;
+	margin-bottom: 10px;
+}
 
 .round {
 	position: relative;

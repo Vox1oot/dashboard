@@ -5,10 +5,10 @@ import { selectors, updateTodo } from '../../../redux/slices/todosSlice.js';
 
 const Task = ({ propertys }) => {
 	const currentTask = useSelector((state) => selectors.selectById(state, propertys.id));
-
 	const dispatch = useDispatch();
 
-	const handleChange = () => {
+	const handleChange = (e) => {
+		console.log(e);
 		dispatch(updateTodo({ id: propertys.id, changes: { active: !currentTask.active } }));
 	};
 
@@ -20,8 +20,8 @@ const Task = ({ propertys }) => {
 		<li className="tasks__item item-tasks flex">
 			<div className="checkbox-wrapper">
 				<div className="round">
-					<input type="checkbox" id="checkbox" onChange={handleChange} />
-					<label htmlFor="checkbox" />
+					<input type="checkbox" id={`checkbox-${propertys.id}`} onChange={handleChange} />
+					<label htmlFor={`checkbox-${propertys.id}`} />
 				</div>
 			</div>
 			<div className={messageClasses}>{propertys.text}</div>
