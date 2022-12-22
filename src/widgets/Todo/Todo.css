@@ -76,6 +76,12 @@
 	overflow: auto;
 }
 
+.tasks__empty {
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
 
 /* TASK */
 
@@ -146,6 +152,7 @@
 /* INPUT */
 
 .input-group {
+	border-top: 1px solid #ccc;
 	padding: 20px;
 	background-color: #fff;
 }

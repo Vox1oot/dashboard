@@ -6,7 +6,7 @@ import { ReactComponent as AddIcon } from '../../../img/icons/add-icon.svg';
 const Input = () => {
 	const [value, setValue] = useState('');
 	const dispatch = useDispatch();
-	const Ids = useSelector(selectors.selectIds);
+	const iDs = useSelector(selectors.selectIds);
 
 	const inputElem = useRef(null);
 
@@ -16,7 +16,8 @@ const Input = () => {
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		const newTask = { id: (Ids.at(-1) + 1), text: value, active: true };
+		const id = iDs.at(-1) !== undefined ? iDs.at(-1) + 1 : 1;
+		const newTask = { id, text: value, active: true };
 		dispatch(addToDo(newTask));
 		setValue('');
 	};
