@@ -1,15 +1,19 @@
 import React from 'react';
 import cn from 'classnames';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectors, updateTodo } from '../../../redux/slices/todosSlice.js';
+import { selectors, updateTodo, removeToDo } from '../../../redux/slices/todosSlice.js';
+import { ReactComponent as Remove } from '../../../img/icons/remove-icon.svg';
 
 const Task = ({ propertys }) => {
 	const currentTask = useSelector((state) => selectors.selectById(state, propertys.id));
 	const dispatch = useDispatch();
 
-	const handleChange = (e) => {
-		console.log(e);
+	const handleChange = () => {
 		dispatch(updateTodo({ id: propertys.id, changes: { active: !currentTask.active } }));
+	};
+
+	const handleRemove = () => {
+		dispatch(removeToDo(propertys.id));
 	};
 
 	const messageClasses = cn('item-tasks__message ml-15 flex', {
@@ -25,6 +29,7 @@ const Task = ({ propertys }) => {
 				</div>
 			</div>
 			<div className={messageClasses}>{propertys.text}</div>
+			<Remove className="item-tasks__remove" onClick={handleRemove} />
 		</li>
 	);
 };

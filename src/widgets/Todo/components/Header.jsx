@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import cn from 'classnames';
 import getDateAndTime, { getHour } from '../../../utils/getDateAndTime.js';
 
-import { ReactComponent as Light } from '../../../img/light.svg';
+import { ReactComponent as Light } from '../../../img/icons/light-icon.svg';
 
 const Header = () => {
 	const [state, setState] = useState(getDateAndTime());

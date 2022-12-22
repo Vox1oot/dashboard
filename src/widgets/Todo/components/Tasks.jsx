@@ -7,8 +7,6 @@ import Task from './Task.jsx';
 const Tasks = () => {
 	const tasks = useSelector(selectors.selectAll);
 
-	console.log(tasks);
-
 	const currentTasks = tasks.reduceRight((acc, task) => (
 		[...acc, <Task key={task.id} propertys={task} />]
 	), []);
