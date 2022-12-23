@@ -1,6 +1,5 @@
 .todo {
 	max-width: 400px;
-	max-height: calc(100vh - 4vh);
 	border: 0;
 	border-radius: 20px 20px 0 0;
 	overflow: hidden;

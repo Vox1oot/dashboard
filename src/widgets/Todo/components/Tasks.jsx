@@ -2,7 +2,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { selectors } from '../../../redux/slices/todosSlice.js';
 
-import Task from './Task.jsx';
+import Task from './Task';
+import TasksList from './TasksList';
 
 const Tasks = () => {
 	const tasks = useSelector(selectors.selectAll);
@@ -11,25 +12,13 @@ const Tasks = () => {
 		[...acc, <Task key={task.id} propertys={task} />]
 	), []);
 
-	const renderTasks = () => {
-		if (tasks.length === 0) {
-			return (
-				<div className="tasks__empty flex">Список задач пуст...</div>
-			);
-		}
-
-		return (
-			<div className="tasks__container p-30">
-				<ul className="tasks__list">
-					{currentTasks}
-				</ul>
-			</div>
-		);
-	};
+	console.log(currentTasks);
 
 	return (
 		<div className="tasks">
-			{ renderTasks() }
+			{ tasks.length !== 0
+				? <TasksList tasks={currentTasks} />
+				: <div className="tasks__empty flex">Список задач пуст...</div>}
 		</div>
 	);
 };
