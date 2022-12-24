@@ -12,6 +12,10 @@ const Header = () => {
 		evening: getHour() > 18 || getHour() < 7,
 	});
 
+	const classesLight = cn('light', {
+		shining: getHour() > 18 || getHour() < 7,
+	});
+
 	useEffect(() => {
 		const interval = setInterval(() => {
 			setState(getDateAndTime());
@@ -23,7 +27,7 @@ const Header = () => {
 	return (
 		<div className={classesHeader}>
 			<div className="header-todo__light">
-				<Light className="light shining" />
+				<Light className={classesLight} />
 			</div>
 			<div className="header-todo__information information-todo">
 				<div className="information-todo__text pt-pb-5">Сегодня</div>

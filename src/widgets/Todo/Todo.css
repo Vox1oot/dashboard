@@ -15,22 +15,10 @@
 	font-size: 20px;
 }
 
-.todo__header::before{
-	position: absolute;
-	content: ' ';
-	width: 100%;
-	height: 100%;
-	right: 0;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	background-color: #282c34;
-	opacity: 0.3;
-}
-
 
 .header-todo__light {
 	text-align: right;
+	z-index: 2;
 }
 
 .header-todo__information {
@@ -56,6 +44,19 @@
 	background-size: cover;
     background-position: center;
 	color: #fff;
+}
+
+.evening::before {
+	position: absolute;
+	content: ' ';
+	width: 100%;
+	height: 100%;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #282c34;
+	opacity: 0.3;
 }
 
 .light {
