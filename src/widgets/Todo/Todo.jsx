@@ -4,13 +4,13 @@ import Tasks from './components/Tasks.jsx';
 import Input from './components/Input.jsx';
 
 const Todo = () => (
-	<div className="todo">
+	<section className="todo">
 		<div className="todo-container">
 			<Header />
 			<Tasks />
 			<Input />
 		</div>
-	</div>
+	</section>
 );
 
 export default Todo;

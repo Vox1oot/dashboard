@@ -1,5 +1,5 @@
 .todo {
-	max-width: 400px;
+	width: 400px;
 	border: 0;
 	border-radius: 20px 20px 0 0;
 	overflow: hidden;
@@ -24,6 +24,7 @@
 .header-todo__information {
 	position: absolute;
 	bottom: 20px;
+	text-align: left;
 }
 
 .information-todo__text {

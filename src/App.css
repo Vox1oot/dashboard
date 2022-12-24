@@ -1,8 +1,10 @@
 @import './widgets/Todo/Todo.css';
+@import './widgets/Vacancy/Vacancy.css';
 
 body {
 	background-color: #282c34;
 	font-family: roboto-regular, sans-serif;
+	text-align: center;
 }
 
 .App {
@@ -10,6 +12,8 @@ body {
 }
 
 .main-container {
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
 	height: 96vh;
 	padding: 2vh;
 }

@@ -1,0 +1,89 @@
+.vacancy {
+	width: 400px;
+	border: 0;
+	border-radius: 20px 20px 0 0;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+/* HEADER */
+
+.vacancy__header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 10vh;
+	font-family: roboto-bold, sans-serif;
+	font-size: 25px;
+}
+
+/* BODY */
+
+.vacancy__list {
+	height: 100vh;
+	overflow: auto;
+	padding: 30px;
+	text-align: left;
+}
+
+.vacancy__item {
+	border-bottom: 1px solid #ccc;
+}
+
+.vacancy-item__name {
+	font-size: 22px;
+	padding: 20px 0 20px;
+}
+
+.vacancy-item__salary {
+	flex-grow: 1;
+	align-items: center;
+	font-size: 18px;
+}
+
+.vacancy-item__btn {
+  align-items: center;
+  appearance: none;
+  background-color: #3384a2;
+  background-image: linear-gradient(1deg, #277a82, #3384a2 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.vacancy-item__btn:active,
+.vacancy-item__btn:focus {
+  outline: none;
+}
+
+.vacancy-item__btn:hover {
+  background-position: -20px -20px;
+}
+
+.vacancy-item__btn:focus:not(:active) {
+  box-shadow: #66bb6a 0 0 0 .125em;
+}
+
+.vacancy-item__footer {
+	padding-bottom: 10px;
+}
