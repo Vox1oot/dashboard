@@ -1,0 +1,13 @@
+.weather__header {
+	align-items: center;
+	justify-content: center;
+}
+
+.weather-header__temperature {
+	font-size: 30px;
+	padding: 10px;
+}
+
+.weather-header__icon {
+	padding: 10px;
+}

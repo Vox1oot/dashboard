@@ -1,5 +1,6 @@
 @import './widgets/Todo/Todo.css';
 @import './widgets/Vacancy/Vacancy.css';
+@import './widgets/Weather/Weather.css';
 
 body {
 	background-color: #282c34;

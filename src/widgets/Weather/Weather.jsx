@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import WeatherInform from './WeatherInform';
 import { fetchWeather, weatherSelector } from '../../redux/slices/weatherSlice.js';
 
 const Weather = () => {
-	const weather = useSelector(weatherSelector);
+	const { data, status } = useSelector(weatherSelector);
 
-	console.log('🚀 ~ file: Weather.jsx:8 ~ Weather ~ weather', weather);
+	console.log('🚀 ~ file: Weather.jsx:9 ~ Weather ~ status', status);
 
 	const dispatch = useDispatch();
 
@@ -13,9 +14,13 @@ const Weather = () => {
 		dispatch(fetchWeather());
 	}, [dispatch]);
 
+	console.log(data);
+
 	return (
 		<section className="weather">
-			Погода
+			<div className="weather-container">
+				{ /* Object.keys(data).length */ status === 'fulfilled' && <WeatherInform data={data} />}
+			</div>
 		</section>
 	);
 };
