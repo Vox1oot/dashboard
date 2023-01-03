@@ -6,20 +6,16 @@ import { fetchWeather, weatherSelector } from '../../redux/slices/weatherSlice.j
 const Weather = () => {
 	const { data, status } = useSelector(weatherSelector);
 
-	console.log('🚀 ~ file: Weather.jsx:9 ~ Weather ~ status', status);
-
 	const dispatch = useDispatch();
 
 	useEffect(() => {
 		dispatch(fetchWeather());
 	}, [dispatch]);
 
-	console.log(data);
-
 	return (
 		<section className="weather">
 			<div className="weather-container">
-				{ /* Object.keys(data).length */ status === 'fulfilled' && <WeatherInform data={data} />}
+				{ status === 'fulfilled' && <WeatherInform data={data} />}
 			</div>
 		</section>
 	);

@@ -1,13 +1,20 @@
-.weather__header {
-	align-items: center;
-	justify-content: center;
+.weather {
+	color: #fff;
 }
 
-.weather-header__temperature {
-	font-size: 30px;
+.weather__title {
 	padding: 10px;
+	font-family: roboto-bold;
+	font-size: 25px;
 }
 
-.weather-header__icon {
+.weather__description {
+	border-bottom: 1px solid #fff;
+	padding: 10px 10px 20px 10px;
+}
+
+.weather__main {
 	padding: 10px;
+	font-family: roboto-bold;
+	font-size: 25px;
 }
