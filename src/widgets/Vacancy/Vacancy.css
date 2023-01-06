@@ -14,9 +14,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 10vh;
 	font-family: roboto-bold, sans-serif;
 	font-size: 25px;
+	padding: 10px;
 }
 
 /* BODY */

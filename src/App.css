@@ -16,6 +16,7 @@ body {
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	grid-gap: 20px;
+	justify-items: center;
 	height: 96vh;
 	padding: 2vh;
 }

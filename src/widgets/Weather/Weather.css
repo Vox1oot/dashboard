@@ -1,5 +1,14 @@
 .weather {
-	color: #fff;
+	max-width: 400px;
+	border: 0;
+	border-radius: 20px 20px 0 0;
+	overflow: hidden;
+	background-color: #fff;
+	font-family: roboto-regular;
+}
+
+.weather-container {
+	padding: 0 30px 30px 30px;
 }
 
 .weather__title {
@@ -9,12 +18,22 @@
 }
 
 .weather__description {
-	border-bottom: 1px solid #fff;
+	font-family: roboto-bold;
+	font-size: 20px;
+	border-bottom: 1px solid #ccc;
 	padding: 10px 10px 20px 10px;
 }
 
 .weather__main {
 	padding: 10px;
-	font-family: roboto-bold;
 	font-size: 25px;
+	border-bottom: 1px solid #ccc;
+}
+
+.weather__footer {
+	font-size: 20px;
+}
+
+.weather__footer p:nth-child(1) {
+	padding: 10px;
 }

@@ -20,7 +20,8 @@ const WeatherInform = ({ data: { main, weather, name } }) => (
 			<span className="weather-main__temperature">{`${main.temp} °C`}</span>
 		</div>
 		<div className="weather__footer">
-			<span />
+			<p>{`Влажность ${main.humidity} %`}</p>
+			<p>{`Ощущается как ${main.feels_like} °C`}</p>
 		</div>
 	</>
 );

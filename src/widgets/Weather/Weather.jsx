@@ -6,6 +6,8 @@ import { fetchWeather, weatherSelector } from '../../redux/slices/weatherSlice.j
 const Weather = () => {
 	const { data, status } = useSelector(weatherSelector);
 
+	console.log('🚀 ~ file: Weather.jsx:9 ~ Weather ~ data', data);
+
 	const dispatch = useDispatch();
 
 	useEffect(() => {
