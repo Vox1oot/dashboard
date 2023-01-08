@@ -30,7 +30,6 @@ const weatherSlice = createSlice({
 	},
 	extraReducers: (builder) => {
 		builder.addCase(fetchWeather.pending, (state, action) => {
-			console.log('ewfewf');
 			state.status = 'downloading';
 		});
 		builder.addCase(fetchWeather.fulfilled, (state, { payload }) => {

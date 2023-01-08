@@ -1,0 +1,17 @@
+.habr {
+	max-height: 500px;
+	overflow: scroll;
+	width: 400px;
+	border: 0;
+	background-color: #fff;
+	font-family: roboto-regular;
+}
+
+.habr-container {
+	padding: 30px;
+}
+
+.habr-feed__description {
+	font-family: roboto-bold;
+	font-size: 25px;
+}
