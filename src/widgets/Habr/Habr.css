@@ -15,3 +15,38 @@
 	font-family: roboto-bold;
 	font-size: 25px;
 }
+
+.posts-item {
+	position: relative;
+	text-align: start;
+	padding: 20px;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.posts-item__title {
+	font-size: 20px;
+}
+
+.posts-item__main {
+	width: auto;
+	top: 0;
+	left: 0;
+	position: absolute;
+	visibility: hidden;
+	padding: 20px;
+	word-wrap: break-word;
+	line-height: 1.5em;
+	border-radius: 0.5em;
+	z-index: 999;
+	background-color: #3384a2;
+	color: #fff;
+}
+
+.post-item_hover:hover .posts-item__main {
+	visibility: visible;
+}
+
+.posts-item__link {
+	padding: 10px 0 0 0;
+}
