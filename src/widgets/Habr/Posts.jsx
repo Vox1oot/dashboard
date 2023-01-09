@@ -8,20 +8,20 @@ const Posts = ({ posts }) => (
 				<div className="posts-item__title">
 					{item.title}
 				</div>
+				<div className="posts-item__link">
+					<a
+						href={item.url}
+						target="_blank"
+						rel="noreferrer"
+					>
+						Читать далее
+					</a>
+				</div>
 				<div className="posts-item__main">
 					<div className="posts-item__description">
 						{item.description
 							.replaceAll(/<[^>]*>/g, '')
 							.replace('Читать далее', '')}
-					</div>
-					<div className="posts-item__link">
-						<a
-							href={item.url}
-							target="_blank"
-							rel="noreferrer"
-						>
-							Читать далее
-						</a>
 					</div>
 				</div>
 			</div>

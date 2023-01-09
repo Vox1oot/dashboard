@@ -25,18 +25,15 @@ const weatherSlice = createSlice({
 		data: {},
 		status: '',
 	},
-	reducers: {
-
-	},
 	extraReducers: (builder) => {
-		builder.addCase(fetchWeather.pending, (state, action) => {
-			state.status = 'downloading';
+		builder.addCase(fetchWeather.pending, (state) => {
+			state.status = 'pending';
 		});
 		builder.addCase(fetchWeather.fulfilled, (state, { payload }) => {
 			state.data = payload;
 			state.status = 'fulfilled';
 		});
-		builder.addCase(fetchWeather.rejected, (state, action) => {
+		builder.addCase(fetchWeather.rejected, (state) => {
 			state.status = 'rejected';
 		});
 	},

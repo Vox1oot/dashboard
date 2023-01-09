@@ -13,6 +13,15 @@ const Vacancy = () => {
 		dispatch(fetchVacancies());
 	}, [dispatch]);
 
+	switch (vacancies.status) {
+		case 'pending':
+			return <div className="downloading downloading-vacancy">Загрузка...</div>;
+		case 'rejected':
+			return <div className="rejected">Ошибка загрузка данных...</div>;
+		default:
+			break;
+	}
+
 	return (
 		<section className="vacancy">
 			<div className="vacancy-container">
@@ -20,7 +29,7 @@ const Vacancy = () => {
 					<span>Javascript вакансии в Челябинске</span>
 				</div>
 				<div className="vacancy__list">
-					{vacancies.map((item) => <VacancyItem key={item.id} props={item} />)}
+					{vacancies.items.map((item) => <VacancyItem key={item.id} props={item} />)}
 				</div>
 			</div>
 		</section>

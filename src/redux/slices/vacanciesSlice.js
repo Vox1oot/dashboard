@@ -12,16 +12,23 @@ export const fetchVacancies = createAsyncThunk(
 
 const vacanciesSlice = createSlice({
 	name: 'vacancies',
-	initialState: { items: [] },
+	initialState: { items: [], status: '' },
 	reducers: {
 
 	},
 	extraReducers: (builder) => {
+		builder.addCase(fetchVacancies.pending, (state) => {
+			state.status = 'pending';
+		});
 		builder.addCase(fetchVacancies.fulfilled, (state, { payload }) => {
 			state.items = payload.items;
+			state.status = 'fulfilled';
+		});
+		builder.addCase(fetchVacancies.rejected, (state) => {
+			state.status = 'rejected';
 		});
 	},
 });
 
-export const vacancySelector = (state) => state.vacancies.items;
+export const vacancySelector = (state) => state.vacancies;
 export default vacanciesSlice.reducer;

@@ -11,10 +11,19 @@ const Weather = () => {
 		dispatch(fetchWeather());
 	}, [dispatch]);
 
+	switch (status) {
+		case 'pending':
+			return <div className="downloading">Загрузка...</div>;
+		case 'rejected':
+			return <div className="rejected">Ошибка загрузка данных...</div>;
+		default:
+			break;
+	}
+
 	return (
 		<section className="weather">
 			<div className="weather-container">
-				{ status === 'fulfilled' && <WeatherInform data={data} />}
+				{ status === 'fulfilled' && <WeatherInform data={data} /> }
 			</div>
 		</section>
 	);

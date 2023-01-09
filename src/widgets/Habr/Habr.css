@@ -17,7 +17,7 @@
 }
 
 .posts-item {
-	position: relative;
+	/* position: relative; */
 	text-align: start;
 	padding: 20px;
 	border-bottom: 1px solid #ccc;
@@ -29,16 +29,15 @@
 }
 
 .posts-item__main {
-	width: auto;
+	width: 100%;
 	top: 0;
 	left: 0;
-	position: absolute;
+	position: fixed;
 	visibility: hidden;
 	padding: 20px;
 	word-wrap: break-word;
 	line-height: 1.5em;
-	border-radius: 0.5em;
-	z-index: 999;
+	/* z-index: 999; */
 	background-color: #3384a2;
 	color: #fff;
 }

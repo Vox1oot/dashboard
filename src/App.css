@@ -3,6 +3,10 @@
 @import './widgets/Weather/Weather.css';
 @import './widgets/Habr/Habr.css';
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background-color: #282c34;
 	font-family: roboto-regular, sans-serif;
@@ -14,10 +18,35 @@ body {
 }
 
 .main-container {
+	position: relative;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	grid-gap: 20px;
 	justify-items: center;
 	height: 96vh;
 	padding: 2vh;
+}
+
+.downloading {
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 400px;
+	height: 100%;
+}
+
+.downloading-vacancy {
+	grid-row-start: 1;
+    grid-row-end: 3;
+	height: 100vh;
+}
+
+.rejected {
+	color: #e21b1b;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 400px;
+	height: 100%;
 }

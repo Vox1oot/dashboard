@@ -28,14 +28,14 @@ const habrSlice = createSlice({
 
 	},
 	extraReducers: (builder) => {
-		builder.addCase(fetchHabr.pending, (state, action) => {
-			state.status = 'downloading';
+		builder.addCase(fetchHabr.pending, (state) => {
+			state.status = 'pending';
 		});
 		builder.addCase(fetchHabr.fulfilled, (state, { payload }) => {
 			state.data = parse(payload);
 			state.status = 'fulfilled';
 		});
-		builder.addCase(fetchHabr.rejected, (state, action) => {
+		builder.addCase(fetchHabr.rejected, (state) => {
 			state.status = 'rejected';
 		});
 	},
