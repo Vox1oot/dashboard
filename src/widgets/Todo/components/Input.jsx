@@ -27,7 +27,7 @@ const Input = () => {
 	}, []);
 
 	return (
-		<form className="form" onSubmit={handleSubmit}>
+		<form className="todo__form" onSubmit={handleSubmit}>
 			<div className="input-group footer flex">
 				<input
 					value={value}

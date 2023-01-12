@@ -33,17 +33,19 @@
 	top: 0;
 	left: 0;
 	position: fixed;
-	visibility: hidden;
 	padding: 20px;
 	word-wrap: break-word;
 	line-height: 1.5em;
-	/* z-index: 999; */
 	background-color: #3384a2;
 	color: #fff;
+	visibility: hidden;
+	transition: opacity 0.6s ease;
+    opacity: 0;
 }
 
 .post-item_hover:hover .posts-item__main {
 	visibility: visible;
+	opacity: 1;
 }
 
 .posts-item__link {
