@@ -50,3 +50,9 @@
 	width: 400px;
 	height: 100%;
 }
+
+@media screen and (max-width: 1590px)  {
+	.main-container {
+		width: 100%;
+	}
+}
