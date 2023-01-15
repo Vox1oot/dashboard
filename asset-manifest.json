@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/dashboard/static/css/main.38045f8e.css",
+    "main.js": "/dashboard/static/js/main.d2e4f029.js",
+    "static/media/morning-mountains.jpg": "/dashboard/static/media/morning-mountains.8ea8bc33959fc1a789e6.jpg",
+    "static/media/evening-mountains.jpg": "/dashboard/static/media/evening-mountains.5579d657613fd703e9df.jpg",
+    "static/media/Roboto-Regular.ttf": "/dashboard/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/Roboto-Black.ttf": "/dashboard/static/media/Roboto-Black.cf56c1b149d0a5e8d7c6.ttf",
+    "static/media/Roboto-Bold.ttf": "/dashboard/static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
+    "static/media/light-icon.svg": "/dashboard/static/media/light-icon.c020cfb783ff4c072b83bdaa2afb264a.svg",
+    "static/media/remove-icon.svg": "/dashboard/static/media/remove-icon.6e67e7f22a76cd3bd0fa378e300564f1.svg",
+    "index.html": "/dashboard/index.html",
+    "static/media/add-icon.svg": "/dashboard/static/media/add-icon.87835aa936fe2052baa3e3f65234c9c1.svg",
+    "main.38045f8e.css.map": "/dashboard/static/css/main.38045f8e.css.map",
+    "main.d2e4f029.js.map": "/dashboard/static/js/main.d2e4f029.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38045f8e.css",
+    "static/js/main.d2e4f029.js"
+  ]
+}
